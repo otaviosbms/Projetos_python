@@ -1,11 +1,23 @@
-a= int(input('primeiro numero'))
-b= int(input('segundo numero'))
-c= input('qual conta vc irá fazer?')
+print('_calculadora Python:_\n')
+
+a= float(input('primeiro numero:\n'))
+c= input('operador(+,-,*,/,**):\n')
+b= float(input('segundo numero:\n'))
+
+if c != '+':
+    print('errado')
+
 if c == '+':
-    print(a+b)
+    print('resultado:',a+b)
+   
 if c == '-':
-    print(a-b)
+    print('resultado:',a-b)
+    
 if c == '/':
-    print(a/b)
+    print('resultado:',a/b)
+    
 if c == '*':
-    print(a*b)
+    print('resutado:',a*b)
+    
+if c == '**':
+    print('resultado:',a**b)
