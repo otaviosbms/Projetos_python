@@ -4,9 +4,6 @@ a= float(input('primeiro numero:\n'))
 c= input('operador(+,-,*,/,**):\n')
 b= float(input('segundo numero:\n'))
 
-if c != '+':
-    print('errado')
-
 if c == '+':
     print('resultado:',a+b)
    
