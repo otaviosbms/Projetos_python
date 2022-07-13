@@ -1,25 +1,29 @@
 print('_calculadora Python:_\n')
 
-a= float(input('primeiro numero:\n'))
-c= input('operador(+,-,*,/,**):\n')
-b= float(input('segundo numero:\n'))
+a = float(input("Primeiro Numero:\n"))
+b = input("operador(+,-,*,/,**):\n")
+
+while b != '+' and b != '-' and b != '*' and b!= '/' and b != '**':
+    b = input("o seu operador é inválido\nescolha outro:\n")
+ 
+c = float(input("Segundo Numero:\n"))
 
 
-if c == '+':
-    print('resultado:',a+b)
-      
-if c == '-':
-    print('resultado:',a-b)
-    
-if c == '/':
-    print('resultado:',a/b)
-    
-if c == '*':
-    print('resutado:',a*b)
-    
-if c == '**':
-    print('resultado:',a**b)
+if b == '+':
+    print('resultado:',a + c)
 
-elif c != '+' and c != '-' and c != '*' and c != '/' and c != '**':
-    print('o seu operador é inválido.')
 
+if b == '-':
+    print('resultado:',a - c)
+
+
+if b == '*':
+    print('resultado:',a * c)
+
+
+if b == '/':
+    print('resultado:',a / c)
+
+
+if b == '**':
+    print('resultado:',a ** c)
