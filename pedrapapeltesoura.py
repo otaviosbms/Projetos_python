@@ -1,4 +1,3 @@
-import random
 pedra = 1
 papel = 2
 tesoura = 3
@@ -14,7 +13,8 @@ if p1 == 'papel':
 if p1 == 'tesoura':
     print('voce escolheu tesoura')
 
-
+import random
+    
 escolhapc = random.randrange(1, 3)
 
 if escolhapc == 1:
