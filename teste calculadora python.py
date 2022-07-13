@@ -21,5 +21,5 @@ if c == '**':
     print('resultado:',a**b)
 
 elif c != '+' and c != '-' and c != '*' and c != '/' and c != '**':
-    print('operador invalido.')
+    print('o seu operador é inválido.')
 
