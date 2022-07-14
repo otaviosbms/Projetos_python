@@ -1,9 +1,10 @@
-user = input('coloque um usuario')
-pasw = input('escolha uma senha')
+while true:
+user = input('coloque um usuario\n')
+pasw = input('escolha uma senha\n')
 
-while pasw == user:
-    pasw = input('escolha uma senha diferente do seu usuario')
-    break
-if user != pasw:
+if pasw == user:
     print('concluido')
+    break
+else:
+    print('sua senha não pode ser igual o usuario')
 
