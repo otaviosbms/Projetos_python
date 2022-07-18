@@ -1,29 +1,82 @@
-pedra = 1
-papel = 2
-tesoura = 3
+#decisão player
 
-p1 = input('pedra, papel ou tesoura?')
+print('____PEDRA PAPEL OU TESOURA PYTHON____')
+
+p1 = input('\nEscolha: pedra, papel ou tesoura?\n')
 
 if p1 == 'pedra':
-    print('voce escolheu pedra')
+    print('voce escolheu', p1)
 
 if p1 == 'papel':
-    print('voce escolheu papel')
+    print('voce escolheu', p1)
 
 if p1 == 'tesoura':
-    print('voce escolheu tesoura')
+    print('voce escolheu', p1)
+
+while p1 != 'pedra' and p1 != 'papel' and p1 != 'tesoura' and p1 != 'Pedra' and p1 != 'Papel' and p1 != 'Tesoura':
+    p1 = str(input("A sua escolha é inválida.\nEscolha outra opção:\n"))
+    if p1 == 'pedra' or 'Pedra':
+        print('voce escolheu', p1)
+        break
+    if p1 == 'papel' or 'Papel':
+        print('voce escolheu', p1)
+        break
+    if p1 == 'tesoura' or 'Tesoura':
+        print('voce escolheu', p1)
+        break
+
+#decisão pc
+
 
 import random
+
     
-escolhapc = random.randrange(1, 3)
+escolhapc = random.randrange(1, 4)
+
+
 
 if escolhapc == 1:
-    print('o computador escolheu pedra')
+    print('\nO computador escolheu pedra')
     
 if escolhapc == 2:
-    print('o computador escolheu papel')
+    print('\nO computador escolheu papel')
     
 if escolhapc == 3:
-    print('o computador escolheu tesoura')
+    print('\nO computador escolheu tesoura')
 
+
+#resultados:
+
+r = (p1, escolhapc)
+
+
+
+while True:
+    if r == ('pedra', 1) or r == ('Pedra', 1):
+        print('\nEmpate')
+        break
+    if r == ('papel', 2) or r == ('Papel', 2):
+        print('\nEmpate')
+        break
+    if r == ('tesoura', 3) or r == ('Tesoura', 3):
+        print('\nEmpate')
+        break
+    if r == ('tesoura', 1) or r == ('Tesoura', 1):
+        print('\nVoce perdeu!')
+        break
+    if r == ('pedra', 2) or r == ('Pedra', 2):
+        print('\nVoce perdeu!')
+        break
+    if r == ('papel', 3) or r == ('Papel', 3):
+        print('\nVoce perdeu!')
+        break
+    if r == ('papel', 1) or r == ('Papel', 1):
+        print('\nVoce ganhou!')
+        break
+    if r == ('tesoura', 2) or r == ('Tesoura', 2):
+        print('\nVoce ganhou!')
+        break
+    if r == ('pedra', 3) or r == ('Pedra', 3):
+        print('\nVoce ganhou!')
+        break
 
