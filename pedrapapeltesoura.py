@@ -58,13 +58,13 @@ while True:
     if r == ('tesoura', 3) or r == ('Tesoura', 3):
         print('\nEmpate')
         break
-    if r == ('tesoura', 1) or r == ('Tesoura', 1):
+    elif r == ('tesoura', 1) or r == ('Tesoura', 1):
         print('\nVoce perdeu!')
         break
-    if r == ('pedra', 2) or r == ('Pedra', 2):
+    elif r == ('pedra', 2) or r == ('Pedra', 2):
         print('\nVoce perdeu!')
         break
-    if r == ('papel', 3) or r == ('Papel', 3):
+    elif r == ('papel', 3) or r == ('Papel', 3):
         print('\nVoce perdeu!')
         break
     if r == ('papel', 1) or r == ('Papel', 1):
