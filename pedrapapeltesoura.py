@@ -1,17 +1,19 @@
+
 #decisão player
 while True:
     print('\n____JOKENPO_PYTHON____')
+    
     print('\n...................')
 
     p1 = input('\nEscolha: pedra, papel ou tesoura?\n')
     print('...................\n')
-    if p1 == 'pedra':
+    if p1 == 'pedra' or p1 == 'Pedra':
         print('voce escolheu:', p1)
 
-    if p1 == 'papel':
+    if p1 == 'papel' or p1 == 'Papel':
         print('voce escolheu:', p1)
 
-    if p1 == 'tesoura':
+    if p1 == 'tesoura' or p1 == 'Tesoura':
         print('voce escolheu:', p1)
     
     while p1 != 'pedra' and p1 != 'papel' and p1 != 'tesoura' and p1 != 'Pedra' and p1 != 'Papel' and p1 != 'Tesoura':
@@ -77,9 +79,7 @@ while True:
             break
     print('''
 ...................
-
 opções:
-
 1- Jogar novamente.
 2- Sair do jogo.
 \n''')
