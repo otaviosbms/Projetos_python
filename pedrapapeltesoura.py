@@ -79,10 +79,11 @@ while True:
             break
     print('''
 ...................
-opções:
+
+Opções:
 1- Jogar novamente.
 2- Sair do jogo.
-\n''')
+''')
     
     while True:
         j = int(input('escolha uma opção: '))
