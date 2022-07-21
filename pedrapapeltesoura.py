@@ -20,13 +20,13 @@ while True:
         p1 = str(input("A sua escolha é inválida.\nEscolha outra opção:\n"))
         if p1 == 'pedra' or 'Pedra':
             print('\nvoce escolheu:', p1)
-            break
+            continue
         if p1 == 'papel' or 'Papel':
             print('\nvoce escolheu:', p1)
-            break
+            continue
         if p1 == 'tesoura' or 'Tesoura':
             print('\nvoce escolheu:', p1)
-            break
+            continue
 
 #decisão pc
 
