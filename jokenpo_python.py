@@ -11,7 +11,7 @@ while True:
         print('voce escolheu:', p1)
 
     if p1 == 'papel' or p1 == 'Papel':
-        print('voce escolheu:', p1)
+        print('voce escolheu-', p1)
 
     if p1 == 'tesoura' or p1 == 'Tesoura':
         print('voce escolheu:', p1)
