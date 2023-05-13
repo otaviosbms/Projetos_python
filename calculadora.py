@@ -1,4 +1,6 @@
-print('_calculadora Python:_\n')
+print('calculadora Python:\n')
+
+teste = "mateus"
 
 a = float(input("Primeiro Numero:\n"))
 b = input("operador(+,-,*,/,**):\n")
